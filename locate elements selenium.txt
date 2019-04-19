@@ -1,0 +1,39 @@
+Selenium locating elements tricks
+Id and xpath
+
+
+https://www.linkedin.com/in/neel-desai-139165177
+String baseURL=""
+Webdriver driver;
+//Webdriver driver = new ChromeDriver();
+driver.manager().window().maximize();
+driver.get(baseURL);
+driver.findElementById("").sendKeys("");
+driver.findElementByxpath("").click();
+
+// findElementByName
+
+driver.findElement(By.name("")).click();
+
+// findElement By linkText and PartialLinkText
+
+// it will wait for 10 seconds until the emements gets loaded -- in condition where 
+// we find error of element not found
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+driver.findElement(By.linkText("")).click();
+Thread.sleep(3000);
+driver.findElement(By.partialLinkText("")).click();
+
+// findElement by className
+
+// demostore.x-cart.com
+
+driver.findElement(By.className("")).click();
+// Id
+//className
+//xpath
+//linkText
+//partialLinkText
+//Tagname
+//cssSelector
